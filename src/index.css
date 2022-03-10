@@ -1,13 +1,198 @@
+@import '../node_modules/materialize-css/dist/css/materialize.min.css';
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  color: #000000;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  /* background-color: #555f74; */
+  /* color: #666;
+  background-color: #f2f2f2; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+/* code {
+  font-family: source-code-pro, Roboto, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+:root {
+  --color-button: #1d2f38;
+  --color-button-hover: #b0bec5;
+  --color-nav: #2e2e2e;
+  --color-sidenav: #2e2e2e;
+  --color-link: #fff;
+  --color-footer: #2e2e2e;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row .col {
+  float: none;
+  padding: 1rem 0.75rem;
+}
+.card .card-content {
+  padding: 0 24px 5px;
+  border-radius: 0 0 2px 2px;
+  margin-top: auto;
+}
+.card .card-action {
+  padding: 5px 24px 0;
+  text-align: center;
+}
+.activator {
+  cursor: pointer;
+}
+.card-image {
+  cursor: pointer;
+}
+
+.color-button {
+  background-color: var(--color-button);
+}
+.color-button:hover {
+  background-color: var(--color-button-hover);
+}
+.color-nav {
+  background-color: var(--color-nav);
+}
+.color-sidenav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-sidenav);
+}
+.color-footer {
+  background-color: var(--color-footer);
+}
+
+img {
+  vertical-align: middle;
+}
+
+.sidenav li > a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-link);
+}
+
+.breadcrumb-nav {
+  background-color: transparent;
+}
+.breadcrumb {
+  display: inline-block;
+  color: #666;
+  cursor: pointer;
+}
+.breadcrumb:hover {
+  color: rgb(170, 166, 166);
+  transition: 0.5s;
+}
+.breadcrumb:before {
+  color: rgb(170, 166, 166);
+  vertical-align: middle;
+}
+.breadcrumb:last-child {
+  color: rgb(170, 166, 166);
+}
+.footer-work {
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+/* @media only screen and (max-width: 360px) {
+  .row .col.s12 {
+    width: calc(100% - 10px);
+  }
+}
+@media only screen and (min-width: 420px) {
+  .row .col.s6 {
+    width: calc(50% - 10px);
+  }
+} */
+
+@media only screen and (min-width: 601px) {
+  .row .col.m6 {
+    width: calc(50% - 10px);
+  }
+}
+@media only screen and (min-width: 993px) {
+  .row .col.l4 {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media only screen and (min-width: 993px) {
+  .row .col.xl3 {
+    width: calc(25% - 10px);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .flow-text-current {
+    font-size: 0.7rem !important;
+  }
+  .flow-text-card-title {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .flow-text-current {
+    font-size: 1rem !important;
+  }
+  .flow-text-card-title {
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .flow-text-current {
+    font-size: 1rem;
+  }
+  .flow-text-card-title {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .flow-text-current {
+    font-size: 1.5rem;
+  }
 }

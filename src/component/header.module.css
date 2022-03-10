@@ -1,0 +1,81 @@
+nav .brand-logo {
+  max-width: 80px;
+  padding: 5px;
+}
+.brand-logo {
+  position: static;
+  font-size: 0.1rem;
+}
+.nav {
+  background-color: rgb(128, 127, 125);
+  color: black;
+}
+nav .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+nav .nav-wrapper-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blocktel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.link {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+
+.block-social {
+  /* position: fixed;
+  top: 30%;
+  z-index: 1;
+  right: 0; */
+  /* background: #eee; */
+  text-align: center;
+  /* width: 50px; */
+  display: flex;
+  /* height: 64px; */
+  width: 160px;
+  align-items: center;
+  justify-content: space-around;
+  /* border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4; */
+}
+.fa-viber {
+  max-width: 20px;
+  display: block;
+  padding: 10px 0;
+  color: #61378b;
+}
+.fa-instagram {
+  max-width: 20px;
+  display: block;
+  padding: 10px 0;
+  color: #c52423;
+}
+.fa-facebook {
+  max-width: 15px;
+  display: block;
+  padding: 10px 0;
+  color: #4267b2;
+}
+.link-cotial {
+  display: inline-block;
+  min-width: 20px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.tel-block {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
